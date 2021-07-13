@@ -1,0 +1,455 @@
+
+                /*GENERIQUE*/
+* {
+    box-sizing: border-box;
+}
+
+/*CODE POUR ENLEVER LA NAV DU SLIDER*/
+
+.flex-control-nav, .flex-control-paging , .flex-direction-nav {
+    
+    display:none;
+    
+}/* FIN DU CODE DISPLAY SLIDER NAV */
+
+
+
+@font-face{
+    src: url(../fonts/BodegaSans_Black.ttf);
+    font-family: "BodegaSans_Black";
+}
+
+html {
+    
+    font-size: 62.5%;
+    
+}
+
+body{
+    
+    background-color: #434343;
+    font-family: "BodegaSans_Black";
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin : 0 auto;
+    font-size: 1.6rem;
+    padding: 40px;
+    line-height: 2;
+    color: #ffffff;
+}
+
+h1 , h2 , h3 {
+    
+    font-family: "BodegaSans_Black";
+    
+}
+
+h1 {
+    
+    margin-bottom: 40px;
+    
+}
+
+
+a {
+    
+    color:white;
+    
+}
+
+
+span {
+    
+    color: #ff9d00;
+    
+}
+
+
+                /*HEADER*/
+
+header {
+    
+    background: linear-gradient(160deg, white 50%, #333333 50%);
+    padding: 10px;
+}
+
+header .container {
+    
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+
+header div nav a {
+    
+    text-align: right;
+    text-decoration: none;
+    font-family: "BodegaSans_Black";
+    font-size: 2.5rem;
+
+    
+}
+
+header div nav {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+                /*MAIN*/
+                
+h1 {
+    
+    font-size: 4rem;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    
+    text-transform: uppercase;
+    font-size: 3rem;
+    border : 3px solid rgba(0, 0, 0, 0.075);
+    border-bottom: none;
+    border-right: none;
+}
+
+h3 {
+    
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #ff9d00;
+    border-bottom: 2px solid #ff9d00;
+    margin-top: 0;
+    
+}
+
+.flexslider{
+    
+    display: none;
+    width: 100%;
+    
+}
+
+                /*ARTICLES*/
+
+article{
+    
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+    
+}
+
+article p {
+    
+    color: #666666;
+    
+}
+
+img {
+    
+    width: 100%;
+    
+}
+
+article a:last-of-type {
+    
+    display: block;
+    width: 100%;
+    background-color: #ff9d00;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+                /*Article Social links*/
+
+.articleSocial {
+    
+     background-color: transparent;
+     
+}
+
+.articleSocial h3 , .articleSocial p {
+    
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    
+}
+
+.articleSocial {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fontAwesome {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fontAwesome a {
+    
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 5rem;
+    
+}
+
+.fontAwesome a:last-of-type {
+    
+    background-color: transparent;
+    padding: 0px;
+    width: auto;
+    
+}
+
+
+
+
+                /*FOOTER*/
+                
+footer p {
+    
+    color: rgba(255, 255, 255, 0.5);
+    
+}                
+                
+.footerContainer {
+    
+    padding: 40px;
+    box-shadow: 0px 0px 15px #252525;
+    
+}
+
+.footerContainer nav{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 0;
+}
+
+.footerContainer nav a{
+    
+    font-size: 1.5rem;
+    margin: 10px;
+    width: 40%;    
+}
+
+.footerContainer a img {
+    
+    margin-top: 20px;
+    width: 30%;
+    
+}
+                
+.articleFooter {
+    
+    background-color: transparent;
+    margin-bottom: 0;
+    
+}
+                
+.articleFooter h3 , .articleFooter p {
+    
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    
+}
+
+video{
+    
+    width: 100%;
+    display: none;
+    
+}
+
+
+                /*Media query Tablette 768px*/
+
+@media screen and (min-width: 768px){
+    
+            /*GENERIQUE*/
+        
+    body {
+        
+        background-image: url(../img/bg_body.svg);
+        background-repeat: repeat;
+        
+    }        
+    
+    
+            /*HEADER*/
+            
+    header{
+        
+        background: linear-gradient(120deg, white 50%, #333333 50%);
+        
+    }        
+    
+    header .container{
+        
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+            /*Main*/
+    
+    h2 {
+        
+        text-align: left;
+        padding-left: 20px;
+        
+    }
+    
+    .flexslider{
+    
+        display: block;
+    
+    }
+    
+    .containerMoto {
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+                
+    .containerMoto article {
+        
+        flex-basis: 45%;
+        
+    }
+    
+            /*FOTTER*/
+            
+    
+    video {
+        
+        display: block;
+        margin-bottom: 50px;
+        
+    }
+    
+    .footerContainer nav {
+    
+        display: flex;
+        flex-direction: row;
+        border-top: 0;
+        width: 70%;
+        margin: 0 auto;
+    
+    }
+    
+    .footerContainer nav a{
+    
+        font-size: 1.5rem;
+        width: 20%;
+    
+    }
+    
+    .footerContainer a img {
+    
+        width: 15%;
+    
+    }
+}
+
+                /*Media query DESKTOP 1025px*/
+
+@media screen and (min-width:1025px){
+    
+    body {
+        
+        padding: 0;
+        
+    }
+    
+    main {
+        
+        margin: 0 30px;
+        
+    }
+    
+    .containerMoto article {
+        
+        flex-basis: 20%;
+        
+    }
+    
+    .containerSocial {
+        
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .articleSocial {
+        
+        flex-basis: 40%; 
+        
+    }
+    
+    .fontAwesome {
+        
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    video {
+        
+        flex-basis: 50%;
+        width: 40%;
+        
+    }
+    
+            /*FOOTER*/
+            
+            
+    .footerContainer nav {
+  
+        width: 40%;
+    
+    }        
+            
+    .footerContainer a img {
+    
+        width: 5%;
+    
+    }        
+}                
+
+        /*Media query FULLSCREEN*/
+        
+@media screen and (display-mode: fullscreen){
+    
+    header .container {
+        
+        padding: 20px 100px;
+        
+    }
+    
+    main {
+        
+        padding: 0px 100px;
+        
+    }
+    
+}        
+
+                
